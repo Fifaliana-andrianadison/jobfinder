@@ -1,4 +1,4 @@
-const PEXELS_API_KEY = "QuOWsDCU3pElDqziYxSbWuaJ6uB54e5d6QUXHEPqxLCR8kF46PEyOdpH"
+const PEXELS_API_KEY = import.meta.env.VITE_PEXELS_API_KEY || "QuOWsDCU3pElDqziYxSbWuaJ6uB54e5d6QUXHEPqxLCR8kF46PEyOdpH"
 
 const DEV_QUERIES = [
   "developer coding",
