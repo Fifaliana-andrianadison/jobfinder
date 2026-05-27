@@ -22,6 +22,7 @@ export default function Header() {
           <a href="#jobs" className="text-sm text-gray-600 hover:text-indigo-600 font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 after:transition-all hover:after:w-full">Offres</a>
           <a href="#stats" className="text-sm text-gray-600 hover:text-indigo-600 font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 after:transition-all hover:after:w-full">Statistiques</a>
           <a href="#categories" className="text-sm text-gray-600 hover:text-indigo-600 font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 after:transition-all hover:after:w-full">Catégories</a>
+          <a href="/recrutement" className="text-sm text-gray-500 hover:text-indigo-600 font-medium transition-colors px-3 py-1.5 border border-gray-200 rounded-lg hover:border-indigo-200">English</a>
         </nav>
 
         <button onClick={() => setOpen(!open)} className="md:hidden p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
@@ -38,6 +39,7 @@ export default function Header() {
           <a href="#jobs" onClick={() => setOpen(false)} className="block text-sm text-gray-600 hover:text-indigo-600 font-medium py-2">Offres</a>
           <a href="#stats" onClick={() => setOpen(false)} className="block text-sm text-gray-600 hover:text-indigo-600 font-medium py-2">Statistiques</a>
           <a href="#categories" onClick={() => setOpen(false)} className="block text-sm text-gray-600 hover:text-indigo-600 font-medium py-2">Catégories</a>
+          <a href="/recrutement" onClick={() => setOpen(false)} className="block text-sm text-indigo-600 font-medium py-2 border-t border-gray-100 pt-3 mt-3">English</a>
         </motion.div>
       )}
     </motion.header>

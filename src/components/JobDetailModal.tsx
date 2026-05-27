@@ -62,16 +62,16 @@ export default function JobDetailModal({ job, open, onClose }: JobDetailModalPro
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-              <div className="absolute bottom-4 left-5 right-5">
-                <h2 className="text-xl font-bold text-white mb-1">{job.jobTitle}</h2>
-                <div className="flex items-center gap-2 text-white/80 text-sm">
+            </div>
+
+            <div className="p-6 space-y-5">
+              <div className="mb-2">
+                <h2 className="text-xl font-bold text-gray-900 mb-1">{job.jobTitle}</h2>
+                <div className="flex items-center gap-2 text-gray-600 text-sm">
                   <Briefcase className="w-4 h-4" />
                   <span>{job.companyName}</span>
                 </div>
               </div>
-            </div>
-
-            <div className="p-6 space-y-5">
               <div className="flex flex-wrap gap-3">
                 {job.salaryRange && job.salaryRange !== "Not specified" && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-xl">
